@@ -51,6 +51,7 @@ function Game(){
     gameBoard = GameBoard();
     gameBoard.printBoard();
     let currentPlayer = player1;
+    let moves = 0;
 
     const changePlayer = () => {
         currentPlayer = currentPlayer === player1 ? player2 : player1;
@@ -84,7 +85,7 @@ function Game(){
         }
     }
 
-    return {play, checkWinner};
+    return {play, checkWinner,moves};
 
 }
 
@@ -98,6 +99,12 @@ function playGame(){
             readline.close();
         }
         else{
+            game.moves++;
+            if(game.moves === 9){
+                console.log('It is a draw');
+                readline.close();
+                return;
+            }
             playGame();
         }
     });
