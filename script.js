@@ -91,6 +91,10 @@ function Game(){
 
 const game = Game();
 
+function screenController(){
+    
+}
+
 function playGame(){
     readline.question('Enter row and column: ', (input) => {
         const [row,col] = input.split(' ').map(Number);

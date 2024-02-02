@@ -1,0 +1,21 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Varela Round', sans-serif;
+}
+
+header{
+    background-color: #4C5C68;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #555;
+}
+
+.title{
+    color: #B0E4DB;
+    font-size: 100px;
+}
